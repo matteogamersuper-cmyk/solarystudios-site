@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impostazioni Account - SolaryStudios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/immagine-del-sito.jpg" type="image/png">
+    <link rel="stylesheet" href="./widget-solarystudios/widget.css">
+    <script src="./widget-solarystudios/widget.js" defer></script>
+    <link rel="stylesheet" href="link-warning/style.css">
+    <script src="link-warning/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-icon">☀️</span>
+                    <span>SolaryStudios</span>
+                </div>
+                <ul id="navMenu">
+                    <li><a href="index.html">🏠 Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="account-settings-section">
+        <div class="container">
+            <div class="settings-container">
+                <h2>⚙️ Impostazioni Account</h2>
+                
+                <div class="account-info">
+                    <h3>Informazioni Account</h3>
+                    <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+                    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                </div>
+
+                <div class="change-nickname-section">
+                    <h3>👤 Cambio Nickname</h3>
+                    <form id="changeNicknameForm">
+                        <div class="form-group">
+                            <label for="newNickname">Nuovo Nickname:</label>
+                            <input type="text" id="newNickname" name="newNickname" required>
+                        </div>
+                        <button type="submit" class="btn">Aggiorna Nickname</button>
+                    </form>
+                </div>
+
+                <div id="account-devices-widget"></div>
+
+                <div class="change-password-section">
+                    <h3>🔐 Cambio Password</h3>
+                    <form id="changePasswordForm">
+                        <div class="form-group">
+                            <label for="currentPassword">Password Attuale:</label>
+                            <input type="password" id="currentPassword" name="currentPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Nuova Password:</label>
+                            <input type="password" id="newPassword" name="newPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmNewPassword">Conferma Nuova Password:</label>
+                            <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+                        </div>
+                        <button type="submit" class="btn">Aggiorna Password</button>
+                    </form>
+                </div>
+                
+
+                <div class="danger-zone">
+                    <h3>⚠️ Zona Pericolosa</h3>
+                    <div class="delete-account-section">
+                        <h4>Elimina Account</h4>
+                        <p class="warning-text">Attenzione: Questa azione è irreversibile. Eliminando il tuo account perderai tutti i dati associati.</p>
+                        <button type="button" class="btn-danger" id="deleteAccountBtn">Elimina Account</button>
+                    </div>
+                </div>
+
+                <a href="index.html" class="btn-secondary">Torna a Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="deleteConfirmModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Conferma Eliminazione Account</h3>
+            <p>Sei sicuro di voler eliminare il tuo account? Questa azione è <strong>definitiva</strong> e non può essere annullata.</p>
+            <p>Scrivi il tuo username per confermare: <strong id="confirmUsername"></strong></p>
+            <input type="text" id="confirmUsernameInput" placeholder="Inserisci il tuo username" class="confirmation-input">
+            <div class="modal-buttons">
+                <button type="button" id="cancelDeleteBtn" class="btn-secondary">Annulla</button>
+                <button type="button" id="confirmDeleteBtn" class="btn-danger" disabled>Elimina Definitivamente</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

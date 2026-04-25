@@ -1,0 +1,17 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+  <!-- Corpo della casa -->
+  <rect x="20" y="40" width="60" height="40" fill="#8ecae6"></rect>
+
+  <!-- Tetto -->
+  <polygon points="20,40 50,15 80,40" fill="#d90429"></polygon>
+
+  <!-- Porta -->
+  <rect x="45" y="60" width="10" height="20" fill="#6d4c41"></rect>
+
+  <!-- Finestre -->
+  <rect x="30" y="50" width="10" height="10" fill="white"></rect>
+  <rect x="60" y="50" width="10" height="10" fill="white"></rect>
+
+</svg>

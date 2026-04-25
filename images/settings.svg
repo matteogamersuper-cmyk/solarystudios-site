@@ -1,0 +1,13 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
+
+  <!-- Ingranaggio esterno -->
+  <polygon points="
+    50,10 60,15 70,10 80,20 75,30 90,40 90,60 75,70
+    80,80 70,90 60,85 50,90 40,85 30,90 20,80
+    25,70 10,60 10,40 25,30 20,20 30,10 40,15" fill="#6b7280"></polygon>
+
+  <!-- Cerchio interno -->
+  <circle cx="50" cy="50" r="15" fill="white"></circle>
+
+</svg>
