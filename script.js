@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="index.html">🏠 Home</a></li>
                 <li><a href="account-settings.html">⚙️ Impostazioni (${loggedInUser.username})</a></li>
                 <li><a href="#" id="logout">Logout</a></li>
+                <li><a href="info.html">💡 Informazioni</a></li>
             `;
             document.getElementById('logout').addEventListener('click', function(e) {
                 e.preventDefault();
