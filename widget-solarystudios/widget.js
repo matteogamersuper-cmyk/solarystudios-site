@@ -1,5 +1,5 @@
 // Array che rappresenta i siti creati
-const data = [{},{}, {}, {}]; // Modifica aggiungendo o togliendo {} per cambiare il numero di siti
+const data = [{},{}, {}, {}, {}]; // Modifica aggiungendo o togliendo {} per cambiare il numero di siti
 
 // Funzione per creare il widget
 function creaWidget() {
