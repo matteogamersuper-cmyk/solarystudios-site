@@ -82,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="account-settings.html">⚙️ Impostazioni (${loggedInUser.username})</a></li>
                 <li><a href="info.html">💡 Informazioni</a></li>
                 <li><a href="#" id="logout">Logout</a></li>
+                <li><a href="products/products.html" id="product">Prodotti</a></li>
+                <li><a href="hosting/hostinfo.html" id="hostingpage">Hosting</a></li>
             `;
             document.getElementById('logout').addEventListener('click', function(e) {
                 e.preventDefault();
